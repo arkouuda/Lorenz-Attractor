@@ -12,7 +12,7 @@ function plotLorenz
         y(k + 1) = y(k) + (x(k)*(a - z(k)) - y(k))*dt; 
         z(k + 1) = z(k) + (x(k)*y(k) - c*z(k))*dt;
         pause(0.001);
-        plot3(x(1:k),y(1:k),z(1:k),'w');
+        plot3(x(1:k),y(1:k),z(1:k),'k');
         axis([-40,40,-40,40,-20,60]);
     end
 end
