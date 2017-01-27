@@ -15,7 +15,7 @@ function plotLorenz
         pause(0.001);
         plot3(x(1:k),y(1:k),z(1:k),'w');
         axis([-40,40,-40,40,-20,60]);
-        axis off;
+        set(gca,'XTickLabel',[],'YTickLabel',[],'ZTickLabel',[]);
         whitebg('black');
     end
 end
