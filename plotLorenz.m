@@ -7,6 +7,7 @@ function plotLorenz
     a = 28;
     b = 10;
     c = 8/3;
+    figure;
     for k = 1:t
         x(k + 1) = x(k) + b*(y(k) - x(k))*dt; 
         y(k + 1) = y(k) + (x(k)*(a - z(k)) - y(k))*dt; 
